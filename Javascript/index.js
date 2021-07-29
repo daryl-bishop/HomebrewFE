@@ -34,7 +34,14 @@
           brews.forEach(brew => renderBrew(brew, getAllOutput));
       }).catch(err => console.log(err)); //calling from table
   }
-
+  const toggleGetAll = () => {
+    var x = document.getElementById("getAllSection");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+}
 
   const renderBrew = (brew, outputDiv) => {   
       const brewColumn = document.createElement('div');
@@ -169,7 +176,7 @@
       }).catch(err => console.log(err));
   });
 
-//getAllBrews();
-document.querySelector('button#getAll').addEventListener('click',getAllBrews);
+getAllBrews();
+document.querySelector('button#getAllButton').addEventListener('click',toggleGetAll);
 })();
  
