@@ -27,12 +27,12 @@
 </head>
 <body> 
 
-    <a href="../index.html" id = "abhome"> HOME</a>
+    <div class = "home"><a href="../index.html" id = "abhome"> HOME</a></div>
 
     <main class="row">
         <section id="postSection" class="col-3">
             <h2>Post Your Recipe</h2>
-         <div id = "qwe">   <form>
+         <div id = "qwe">   <form id = "input">
                 <label for="brewType" class="form-label">Type:</label>
                 <input type="text" id="brewType" name="type" class="form-control" required>
                 <label for="brewName" class="form-label">Name:</label>
@@ -60,12 +60,13 @@
                 </div>
             </section>
 
-            <section id="getAllSection"> 
+          
                 
-               <div> <button id = "getAll" class="btn btn-primary col-2" >See All Brews</button>
+                <button id = "getAllButton" class="btn btn-primary col-2" >See All Brews</button>
+                <section id="getAllSection" style="display: none;"> 
                 <div id="getAllOutput" class="card-group row row-cols-3 g-4">
               </div>
-                </div>
+               
               </section>
             </div>
         <section id="updateBrew">
@@ -89,8 +90,8 @@
                 </select>
                 <br>
                 <br>
-                <button type="reset">RESET</button>
-                <button onclick=>SUBMIT</button>
+               <div id = resub><button type="reset">RESET</button>
+                <button onclick=>SUBMIT</button></div> 
             </form>
         </section>
     </main>
