@@ -94,15 +94,21 @@ h2{
   font-size: 40px;
 }
 
-#qwe{
-  color: rgb(247, 243, 243);
-  
+#updateBrew {
+  position:relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
 }
+
+
 #resub{
   font-family:"Helvetica", Sans-serif;
 }
 #input{
-  left: 20%;
+  margin-left: 50%;
+  width: 75%;
+  color: white;
 }
 #zxc{
   position: relative;

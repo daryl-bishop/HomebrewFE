@@ -152,7 +152,7 @@
   document.querySelector("button#getid").addEventListener('click', getBrewById);
   
   document.querySelector("section#postSection form").addEventListener('submit', (e) => {
-
+      console.log("Hello")
       e.preventDefault(); // stops the form submitting in the default way
   
       const form = e.target;
